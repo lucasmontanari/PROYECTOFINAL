@@ -1,0 +1,18 @@
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"error","message":"Error en Registro"}
+{"level":"error","message":"Error en Registro"}
+{"level":"error","message":"Las contraseñas no coinciden"}
+{"level":"error","message":"Las contraseñas no coinciden"}
+{"level":"error"}
+{"level":"error","message":"Las contraseñas no coinciden"}
+{"level":"error","message":"Las contraseñas no coinciden"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"level":"warn","message":"Acceso a Ruta no Definida"}
+{"code":21608,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21608","status":400}

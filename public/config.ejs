@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./ejs.min.js"></script>
+
+    <title>Archivo de Configuración</title>
+</head>
+
+<body>
+    <br>
+    <div class="row justify-content-center align-items-center">
+        <div class="col">
+            <div class="container-sm border rounded" style="background-color: green;color: white;">
+                <h1>Archivo de Configuración</h1>
+                <br>
+                <h3>Entorno: <%=data.entorno%>
+                </h3>
+                <h3>Puerto de Servidor: <%=data.puerto%>
+                </h3>
+                <h3>Db URL: <%=data.UrlDb%>
+                </h3>
+                <h3>Email de Servidor: <%=data.serverEmail%>
+                </h3>
+                <h3>Limite de Tiempo de Sesión: <%=data.sessionTime%>ms / <%=data.sessionTime/60000%>min
+                </h3>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary my-5" onclick="inicio()">Home</button>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-danger my-5" onclick="logout()">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redireccionar(pagina) {
+            location.href = pagina;
+        }
+        function inicio() {
+            console.log('logout');
+            redireccionar('/api/home')
+        }
+        function logout() {
+            console.log('logout');
+            redireccionar('/api/logout')
+        }
+    </script>
+</body>
+
+</html>
